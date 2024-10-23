@@ -30,7 +30,7 @@ export default function Register() {
         createUserWithEmailAndPassword(auth_user, data.email, data.password)
         .then((userCredential) => {
             const user = userCredential.user;
-            console.log(user);
+            console.log(user); //mandaria la info del usuario (correo)
             //redigirlo a la pagina principal
             navigate('/')
         }).catch((error) => {

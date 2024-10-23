@@ -3,6 +3,8 @@ import { initializeApp } from "firebase/app";
 //importamos el servicio de la autenticacion
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
+//firestore
+
 const firebaseConfig = {
     apiKey: "AIzaSyCaqMVq4pnG7JFPSKU9k3ZebOhYX8-19NU",
     authDomain: "app-authentication-a663f.firebaseapp.com",

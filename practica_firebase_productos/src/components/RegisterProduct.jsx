@@ -19,13 +19,13 @@ export default function RegisterProduct() {
     //metodo para guardar un producto
     const saveProduct = async (data) => {
         console.log("Se ha guardado");
-        console.log(data);
+        console.log(data); //{ name: cebolla, description: cebollas moradas }
         
         //conectarnos a la bd y guardamos un documento
         try{
             await addDoc(collection(db, "products"), {
-                name: data.name,
-                description: data.description
+                name: data.name, //cebolla
+                description: data.description //cebollas moradas
             })
         }catch(error){
             console.error("Error al registrar el producto", error)
